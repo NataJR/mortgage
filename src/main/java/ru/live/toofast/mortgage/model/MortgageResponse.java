@@ -8,7 +8,6 @@ public class MortgageResponse implements Serializable {
     private Long id;
     private String resolution;
 
-
     public MortgageRequest getRequest() {
         return request;
     }
@@ -35,7 +34,7 @@ public class MortgageResponse implements Serializable {
 
     @Override
     public String toString() {
-        return "MortgageApplication{" +
+        return "MortgageResponse{" +
                 "request=" + request +
                 ", id=" + id +
                 ", resolution='" + resolution + '\'' +
