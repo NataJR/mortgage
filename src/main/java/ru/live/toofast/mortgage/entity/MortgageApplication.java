@@ -14,6 +14,19 @@ public class MortgageApplication {
 
     private String name;
 
+    private String status;
+
+    private String declineReason;
+
+    public MortgageApplication() {
+    }
+
+    public MortgageApplication(Long id, String name, String status, String declineReason) {
+        this.id = id;
+        this.name = name;
+        this.status = status;
+        this.declineReason = declineReason;
+    }
 
     public Long getId() {
         return id;
@@ -29,5 +42,21 @@ public class MortgageApplication {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getDeclineReason() {
+        return declineReason;
+    }
+
+    public void setDeclineReason(String declineReason) {
+        this.declineReason = declineReason;
     }
 }
